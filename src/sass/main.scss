@@ -1,0 +1,16 @@
+@use './abstracts/root';
+@use './abstracts/fonts' as *;
+@use './components/navbar.scss';
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #f2f2f2;
+  padding: 50px 100px 0px 100px;
+  overflow-x: hidden;
+  font-family: "Jost", Arial, Helvetica, sans-serif;
+}

@@ -1,0 +1,22 @@
+.navbar{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo{
+    width: 196px;
+  }
+
+  &__content{
+    display: flex;
+    gap: 50px;
+    list-style-type: none;
+
+    a{
+      text-decoration: none;
+      text-transform: uppercase;
+      color: var(--clr-primary-black);
+    }
+  }
+}
