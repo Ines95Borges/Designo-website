@@ -1,0 +1,152 @@
+.hero {
+  position: relative;
+  display: flex;
+
+  width: 100%;
+  background-image: linear-gradient(var(--clr-primary-peach), var(--clr-secondary-light-peach));
+  border-radius: 10px;
+  height: 640px;
+  overflow: hidden;
+  margin-top: 50px;
+
+  img, &__content{
+    position: absolute;
+  }
+
+  &__images{
+    width: 50%;
+  }
+
+  &__circle-image{
+    top: 0;
+    right: 0;
+  }
+
+  &__phone-image{
+    right: -10px;
+  }
+
+  &__content{
+    height: 350px;
+    width: 540px;
+    top: 180px;
+    left: 80px;
+  }
+
+  &__title{
+    font-size: 48px;
+    line-height: 48px;
+    color: var(--clr-primary-white);
+    margin-bottom: 40px;
+    font-weight: 400;
+  }
+
+  &__description{
+    font-size: 1rem;
+    line-height: 26px;
+    color: var(--clr-primary-white);
+    margin-bottom: 40px;
+  }
+
+  &__button{
+    padding: 20px 40px;
+    color: var(--clr-secondary-dark-grey);
+    background-color: var(--clr-primary-white);
+    border: none;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0px 5px 10px 2px rgba($color: #333136, $alpha: 0.3);
+  }
+}
+
+.bg-image-rounded-rect{
+  position: absolute;
+  top: 475px;
+  left: 0px;
+  z-index: -1;
+}
+
+.pages{
+  width: 100%;
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+
+  &__web-design{
+    grid-row: 1 / -1;
+  }
+
+  &__graphic-design{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+
+  &__web-design, &__app-design, &__graphic-design{
+    position: relative;
+    background-color: rgba($color: #000000, $alpha: 0.5);
+    border-radius: 10px;
+
+    img{
+      border-radius: 10px;
+      width: 100%;
+      height: 100%;
+      display: block;
+      mix-blend-mode: multiply;
+    }
+  }
+
+  &__link{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+
+    h2, p{
+      color: var(--clr-primary-white);
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    h2{
+      font-size: var(--fs-h2);
+      line-height: 48px;
+      font-weight: 500;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+    }
+
+    p{
+      font-weight: 500;
+      font-size: 15px;
+      letter-spacing: 5px;
+      line-height: 21.68px;
+    }
+  }
+}
+
+.qualities{
+  margin-top: 100px;
+  display: flex;
+  gap: 20px;
+  text-align: center;
+
+  &__images{
+    position: relative;
+    height: 202px;
+
+    img{
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__second-circle{
+    transform: rotate(-90deg);
+  }
+}
