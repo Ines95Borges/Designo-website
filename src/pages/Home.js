@@ -1,4 +1,6 @@
 import React from 'react';
+import ContactLink from '../components/ContactLink';
+import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
 
 const Home = () => {
@@ -58,7 +60,9 @@ const Home = () => {
         </div>
         <div className="qualities__resourceful">
           <div className="qualities__images">
-            <img src="/assets/shared/desktop/bg-pattern-small-circle.svg" alt="" className="qualities__second-circle"/>
+            <div className="qualities__second-circle">
+              <svg xmlns="http://www.w3.org/2000/svg" width="202" height="202"><defs><linearGradient id="a" x1="0%" x2="100%" y1="50%" y2="50%"><stop offset="0%" stop-color="#5D0202" stop-opacity="0"/><stop offset="100%" stop-color="#5D0202" stop-opacity=".498"/></linearGradient></defs><circle cx="101" cy="101" r="101" fill="url(#a)" fill-rule="evenodd" opacity=".203" transform="matrix(-1 0 0 1 202 0)" /></svg>
+            </div>
             <img src="/assets/home/desktop/illustration-resourceful.svg" alt="Resourceful"/>
           </div>
           <h3 className="qualities__quality">resourceful</h3>
@@ -66,13 +70,18 @@ const Home = () => {
         </div>
         <div className="qualities__friendly">
           <div className="qualities__images">
-            <img src="/assets/shared/desktop/bg-pattern-small-circle.svg" alt=""/>
+            <div className="qualities__third-circle">
+              <svg xmlns="http://www.w3.org/2000/svg" width="202" height="202"><defs><linearGradient id="a" x1="0%" x2="100%" y1="50%" y2="50%"><stop offset="0%" stop-color="#5D0202" stop-opacity="0"/><stop offset="100%" stop-color="#5D0202" stop-opacity=".498"/></linearGradient></defs><circle cx="101" cy="101" r="101" fill="url(#a)" fill-rule="evenodd" opacity=".203" transform="matrix(-1 0 0 1 202 0)" className=""/></svg>
+            </div>
             <img src="/assets/home/desktop/illustration-friendly.svg" alt="Friendly"/>
           </div>
           <h3 className="qualities__quality">friendly</h3>
           <p className="qualities__text"> We are a group of enthusiastic folks who know how to put people first. Our success depends on our customers, and we strive to give them the best experience a company can provide.</p>
         </div>
       </section>
+
+      <ContactLink />
+      <Footer />
     </>
   )
 }

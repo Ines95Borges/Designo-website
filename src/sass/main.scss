@@ -1,6 +1,8 @@
 @use './abstracts/root';
 @use './abstracts/fonts' as *;
 @use './components/navbar.scss';
+@use './components/contactLink.scss';
+@use './components/footer.scss';
 @use './pages/home.scss';
 
 *{
@@ -22,5 +24,5 @@ body{
 }
 
 #root{
-  // position: relative;
+  position: relative;
 }

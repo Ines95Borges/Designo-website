@@ -10,7 +10,7 @@ const Navbar = () => {
   return(
     <nav className="navbar">
       <Link to="/" style={navStyle}>
-        <img src="/assets/shared/desktop/logo-dark.png" alt="logo" className="navbar__logo"/>
+        <img src="/assets/shared/desktop/logo-dark.png" alt="logo" className="navbar--logo"/>
       </Link>
       <ul className="navbar__content">
         <Link to="/about">  
