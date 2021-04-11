@@ -1,0 +1,44 @@
+.hero-about{
+  background-color: var(--clr-primary-peach);
+  position: relative;
+  border-radius: 10px;
+  margin-top: 100px;
+  overflow: hidden;
+
+  &__bg-image{
+    position: absolute;
+    transform: translate(-13%, -24%);
+  }
+
+  &__content{
+    display: flex;
+  }
+
+  &__description{
+    align-self: center;
+    padding: 70px;
+  }
+
+  &__title{
+    font-size: var(--fs-h1);
+    line-height: 48px;
+    color: var(--clr-primary-white);
+    font-weight: 500;
+    margin-bottom: 30px;
+  }
+
+  &__text{
+    font-weight: 400;
+    font-size: var(--fs-p);
+    line-height: 26px;
+    color: var(--clr-primary-white);
+  }
+
+}
+
+.bg-rounded-rect-about{
+  position: absolute;
+  top: 475px;
+  left: -100px;
+  z-index: -1;
+}

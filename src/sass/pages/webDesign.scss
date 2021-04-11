@@ -1,0 +1,140 @@
+.introduction{
+  height: 252px;
+  background-color: var(--clr-primary-peach);
+  border-radius: 10px;
+  margin-top: 110px;
+  position: relative;
+  overflow-y: hidden;
+
+  &__bg-image{
+    position: absolute;
+    transform: translateY(-30%);
+    right: 0;
+    z-index: 0;
+  }
+
+  &__content{
+    width: min(100%, 730px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 150px;
+  }
+
+  &__title{
+    font-weight: 500;
+    font-size: var(--fs-h1);
+    line-height: 48px;
+    color: var(--clr-primary-white);
+    margin-bottom: 20px;
+  }
+
+  &__text{
+    font-weight: 400;
+    font-size: var(--fs-p);
+    line-height: 26px;
+    color: var(--clr-primary-white);
+  }
+}
+
+.bg-rounded-rect{
+  position: absolute;
+  top: 281px;
+  left: -100px;
+  z-index: -1;
+}
+
+.content{
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+
+  &__card{
+    max-width: 100%;
+    border-radius: 10px;
+    background-color: #FDF3F0;
+
+    img{
+      width: 100%;
+      max-width: 100%;
+      height: 320px;
+      object-fit: cover;
+      border-radius: 10px 10px 0 0;
+    }
+  }
+
+  &__title{
+    text-align: center;
+    font-size: var(--fs-h3);
+    line-height: 26px;
+    letter-spacing: 5px;
+    font-weight: 500;
+    padding: 20px;
+    text-transform: uppercase;
+    color: var(--clr-secondary-light-peach);
+  }
+
+  &__description{
+    padding: 0 40px 20px 40px;
+    text-align: center;
+    font-size: var(--fs-p);
+    line-height: 26px;
+    font-weight: 400;
+  }
+}
+
+.pages-web{
+  width: 100%;
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+
+
+  &__app-design, &__graphic-design{
+    position: relative;
+    background-color: rgba($color: #000000, $alpha: 0.5);
+    border-radius: 10px;
+    grid-row: 1 / 2;
+
+    img{
+      border-radius: 10px;
+      width: 100%;
+      height: 100%;
+      display: block;
+      mix-blend-mode: multiply;
+    }
+  }
+
+  &__link{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+
+    h2, p{
+      color: var(--clr-primary-white);
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    h2{
+      font-size: var(--fs-h2);
+      line-height: 48px;
+      font-weight: 500;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+    }
+
+    p{
+      font-weight: 500;
+      font-size: 15px;
+      letter-spacing: 5px;
+      line-height: 21.68px;
+    }
+  }
+}

@@ -2,8 +2,17 @@ import React from 'react';
 import ContactLink from '../components/ContactLink';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
+import {Link} from 'react-router-dom';
 
 const Home = () => {
+  const linksStyle ={
+    fontWeight: 500,
+    fontSize: "15px",
+    letterSpacing: "5px",
+    lineHeight: "21.68px",
+    textDecoration: "none"
+  }
+
   return(
     <>
       <Navbar />
@@ -30,21 +39,27 @@ const Home = () => {
           <img src="/assets/home/desktop/image-web-design-large.jpg" alt="Web design page"/>
           <div className="pages__link">
             <h2>Web design</h2>
-            <p>View projects</p>
+            <Link to="/webdesign" style={linksStyle}>
+              <p>View projects</p>
+            </Link>
           </div>
         </div>
         <div className="pages__app-design">
           <img src="/assets/home/desktop/image-app-design.jpg" alt="App design page"/>
           <div className="pages__link">
             <h2>App design</h2>
-            <p>View projects</p>
+            <Link to="/appdesign" style={linksStyle}>
+              <p>View projects</p>
+            </Link>
           </div>
         </div>
         <div className="pages__graphic-design">
           <img src="/assets/home/desktop/image-graphic-design.jpg" alt="Graphic design page"/>
           <div className="pages__link">
             <h2>Graphic design</h2>
-            <p>View projects</p>
+            <Link to="/graphicsdesign" style={linksStyle}>
+              <p>View projects</p>
+            </Link>
           </div>
         </div>
       </section>
@@ -78,7 +93,12 @@ const Home = () => {
           <h3 className="qualities__quality">friendly</h3>
           <p className="qualities__text"> We are a group of enthusiastic folks who know how to put people first. Our success depends on our customers, and we strive to give them the best experience a company can provide.</p>
         </div>
+        <div className="bg-image-rounded-rect2">
+          <svg width="1006" height="594" xmlns="http://www.w3.org/2000/svg"><path d="M297 0h412c164.029 0 297 132.971 297 297S873.029 594 709 594H0V297C0 132.971 132.971 0 297 0z" fill="#F1F3F5" fill-rule="evenodd" opacity=".502"/></svg>
+        </div>
       </section>
+
+      
 
       <ContactLink />
       <Footer />
