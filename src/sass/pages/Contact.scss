@@ -1,0 +1,119 @@
+.contact{
+  margin-top: 100px;
+  border-radius: 10px;
+  background-color: var(--clr-primary-peach);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+
+  &__bg-circle{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  &__description{
+    flex-basis: 540px;
+    align-self: center;
+    margin-left: 100px;
+    padding-right: 100px;
+
+    &__title{
+      font-size: var(--fs-h1);
+      line-height: 48px;
+      font-weight: 500;
+      color: var(--clr-primary-white);
+      margin-bottom: 50px;
+    }
+
+    &__text{
+      font-size: var(--fs-p);
+      line-height: 26px;
+      color: var(--clr-primary-white);
+    }
+  }
+
+  &__form{
+    flex-grow: 1;
+    padding: 96px 96px 96px 0;
+
+    &__field{
+      position: relative;
+      display: flex;
+
+      input, textarea{
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px solid var(--clr-primary-white);
+        opacity: 0.7;
+
+        &::placeholder{
+          color: var(--clr-primary-white);
+          font-size: 15px;
+          line-height: 26px;
+          font-weight: 500;
+          opacity: 0.7;
+        }
+
+        &:focus{
+          opacity: 1;
+          outline: none;
+        }
+
+        &:focus::placeholder{
+          opacity: 1;
+        }
+      }
+      
+      input{
+        height: 38px;
+        margin-bottom: 25px;
+        padding: 0 0 10px 10px;
+
+      }
+
+
+      textarea{
+        height: 102px;
+        padding: 10px;
+        margin-bottom: 20px;
+      }
+    }
+
+    [class^="contact__form__empty-field"]{
+      display: none;
+      position: absolute;
+      right: 0;
+      gap: 10px;
+    }
+
+    &__empty-text{
+      color: var(--clr-primary-white);
+      font-style: italic;
+      font-weight: 400;
+      font-size: 12px;
+    }
+
+    &--btn-submit{
+      position: absolute;
+      padding: 17px 47px;
+      border: none;
+      background-color: var(--clr-primary-white);
+      border-radius: 10px;
+      right: 96px;
+      cursor: pointer;
+      text-transform: uppercase;
+      font-size: 15px;
+      letter-spacing: 1px;
+      font-weight: 500;
+    }
+  }
+}
+
+.bg-rounded-rect-contact{
+  position: absolute;
+  top: 835px;
+  right: -100px;
+  z-index: -1;
+}
