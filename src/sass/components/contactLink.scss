@@ -8,6 +8,10 @@
   display: flex;
   justify-content: space-between;
 
+  @media screen and (max-width: 768px){
+    flex-direction: column;
+  }
+
   &__bg-image{
     position: absolute;
     top: 50%;
@@ -17,6 +21,12 @@
 
   &__content{
     width: min(100%, 459px);
+    @media screen and (max-width: 768px){
+      text-align: center;
+      width: 100%;
+      padding: 0 7rem;
+      margin-bottom: 30px;
+    }
   }
 
   &__title{

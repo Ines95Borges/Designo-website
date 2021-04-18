@@ -6,10 +6,7 @@ import Footer from '../components/Footer';
 
 const WebDesign = () => {
   const linksStyle ={
-    fontWeight: 500,
-    fontSize: "15px",
-    letterSpacing: "5px",
-    lineHeight: "21.68px",
+    height: "100%",
     textDecoration: "none"
   }
 
@@ -34,55 +31,63 @@ const WebDesign = () => {
       <section className="content">
         <div className="content__card">
           <img src="/assets/web-design/desktop/image-express.jpg" alt="Express"/>
-          <h3 className="content__title">Express</h3>
-          <p className="content__description">A multi-carrier shipping website for ecommerce businesses</p>
+          <div>
+            <h3 className="content__title">Express</h3>
+            <p className="content__description">A multi-carrier shipping website for ecommerce businesses</p>
+          </div>
         </div>
         <div className="content__card">
           <img src="/assets/web-design/desktop/image-transfer.jpg" alt="Express"/>
-          <h3 className="content__title">Transfer</h3>
-          <p className="content__description">Site for low-cost money transfers and sending money within seconds</p>
+          <div>
+            <h3 className="content__title">Transfer</h3>
+            <p className="content__description">Site for low-cost money transfers and sending money within seconds</p>
+          </div>
         </div>
         <div className="content__card">
           <img src="/assets/web-design/desktop/image-photon.jpg" alt="Express"/>
-          <h3 className="content__title">Photon</h3>
-          <p className="content__description">A state-of-the-art music player with high-resolution audio and DSP effects</p>
+          <div>
+            <h3 className="content__title">Photon</h3>
+            <p className="content__description">A state-of-the-art music player with high-resolution audio and DSP effects</p>
+          </div>
         </div>
         <div className="content__card">
           <img src="/assets/web-design/desktop/image-builder.jpg" alt="Express"/>
-          <h3 className="content__title">Builder</h3>
-          <p className="content__description">Connects users with local contractors based on their location</p>
+          <div>
+            <h3 className="content__title">Builder</h3>
+            <p className="content__description">Connects users with local contractors based on their location</p>
+          </div>
         </div>
         <div className="content__card">
           <img src="/assets/web-design/desktop/image-blogr.jpg" alt="Express"/>
-          <h3 className="content__title">Blogr</h3>
-          <p className="content__description">Site for low-cost money transfers and sending money within seconds</p>
+          <div>
+            <h3 className="content__title">Blogr</h3>
+            <p className="content__description">Site for low-cost money transfers and sending money within seconds</p>
+          </div>
         </div>
         <div className="content__card">
           <img src="/assets/web-design/desktop/image-camp.jpg" alt="Express"/>
-          <h3 className="content__title">Camp</h3>
-          <p className="content__description">Get expert training in coding, data, design, and digital marketing</p>
+          <div>
+            <h3 className="content__title">Camp</h3>
+            <p className="content__description">Get expert training in coding, data, design, and digital marketing</p>
+          </div>
         </div>
       </section>
 
       <section className="pages-web">
-        <div className="pages-web__app-design">
+        <Link to="/appdesign" style={linksStyle} className="pages-web__app-design">
           <img src="/assets/home/desktop/image-app-design.jpg" alt="App design page"/>
           <div className="pages-web__link">
             <h2>App design</h2>
-            <Link to="/appdesign" style={linksStyle}>
               <p>View projects</p>
-            </Link>
           </div>
-        </div>
-        <div className="pages-web__graphic-design">
+        </Link>
+        <Link to="/graphicsdesign" style={linksStyle} className="pages-web__graphic-design">
           <img src="/assets/home/desktop/image-graphic-design.jpg" alt="Graphic design page"/>
           <div className="pages-web__link">
             <h2>Graphic design</h2>
-            <Link to="/graphicsdesign" style={linksStyle}>
               <p>View projects</p>
-            </Link>
           </div>
-        </div>
+        </Link>
       </section>
 
       <ContactLink />

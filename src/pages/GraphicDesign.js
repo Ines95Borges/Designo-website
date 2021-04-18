@@ -34,40 +34,42 @@ const GraphicDesign = () => {
       <section className="content">
         <div className="content__card">
           <img src="/assets/graphic-design/desktop/image-change.jpg" alt="Tim Brown"/>
-          <h3 className="content__title">Tim Brown</h3>
-          <p className="content__description">A book cover designed for Tim Brown’s new release, ‘Change’</p>
+          <div>
+            <h3 className="content__title">Tim Brown</h3>
+            <p className="content__description">A book cover designed for Tim Brown’s new release, ‘Change’</p>
+          </div>
         </div>
         <div className="content__card">
           <img src="/assets/graphic-design/desktop/image-boxed-water.jpg" alt="Boxed Water"/>
-          <h3 className="content__title">Boxed Water</h3>
-          <p className="content__description">A simple packaging concept made for Boxed Water</p>
+          <div>
+            <h3 className="content__title">Boxed Water</h3>
+            <p className="content__description">A simple packaging concept made for Boxed Water</p>
+          </div>
         </div>
         <div className="content__card">
           <img src="/assets/graphic-design/desktop/image-science.jpg" alt="Science"/>
-          <h3 className="content__title">Science</h3>
-          <p className="content__description">A poster made in collaboration with the Federal Art Project</p>
+          <div>
+            <h3 className="content__title">Science</h3>
+            <p className="content__description">A poster made in collaboration with the Federal Art Project</p>
+          </div>
         </div>
       </section>
 
       <section className="pages-web">
-        <div className="pages-web__app-design">
+        <Link to="/appdesign" style={linksStyle} className="pages-web__app-design">
           <img src="/assets/home/desktop/image-app-design.jpg" alt="App design page"/>
           <div className="pages-web__link">
             <h2>App design</h2>
-            <Link to="/appdesign" style={linksStyle}>
               <p>View projects</p>
-            </Link>
           </div>
-        </div>
-        <div className="pages-web__graphic-design">
+        </Link>
+        <Link to="/webdesign" style={linksStyle} className="pages-web__graphic-design">
           <img src="/assets/home/desktop/image-web-design-small.jpg" alt="Web design page"/>
           <div className="pages-web__link">
             <h2>Web design</h2>
-            <Link to="/webdesign" style={linksStyle}>
               <p>View projects</p>
-            </Link>
           </div>
-        </div>
+        </Link>
       </section>
 
       <ContactLink />

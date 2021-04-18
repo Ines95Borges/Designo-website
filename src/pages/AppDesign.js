@@ -6,10 +6,7 @@ import Navbar from '../components/Navbar';
 
 const AppDesign = () => {
   const linksStyle ={
-    fontWeight: 500,
-    fontSize: "15px",
-    letterSpacing: "5px",
-    lineHeight: "21.68px",
+    height: "100%",
     textDecoration: "none"
   }
 
@@ -34,50 +31,56 @@ const AppDesign = () => {
       <section className="content">
         <div className="content__card">
           <img src="/assets/app-design/desktop/image-airfilter.jpg" alt="Airfilter"/>
-          <h3 className="content__title">Airfilter</h3>
-          <p className="content__description">Solving the problem of poor indoor air quality by filtering the air</p>
+          <div>
+            <h3 className="content__title">Airfilter</h3>
+            <p className="content__description">Solving the problem of poor indoor air quality by filtering the air</p>
+          </div>
         </div>
         <div className="content__card">
           <img src="/assets/app-design/desktop/image-eyecam.jpg" alt="Eyecam"/>
-          <h3 className="content__title">Eyecam</h3>
-          <p className="content__description">Product that lets you edit your favorite photos and videos at any time</p>
+          <div>
+            <h3 className="content__title">Eyecam</h3>
+            <p className="content__description">Product that lets you edit your favorite photos and videos at any time</p>
+          </div>
         </div>
         <div className="content__card">
           <img src="/assets/app-design/desktop/image-faceit.jpg" alt="Faceit"/>
-          <h3 className="content__title">Faceit</h3>
-          <p className="content__description">Get to meet your favorite internet superstar with the faceit app</p>
+          <div>
+            <h3 className="content__title">Faceit</h3>
+            <p className="content__description">Get to meet your favorite internet superstar with the faceit app</p>
+          </div>
         </div>
         <div className="content__card">
           <img src="/assets/app-design/desktop/image-todo.jpg" alt="Todo"/>
-          <h3 className="content__title">Todo</h3>
-          <p className="content__description">A todo app that features cloud sync with light and dark mode</p>
+          <div>
+            <h3 className="content__title">Todo</h3>
+            <p className="content__description">A todo app that features cloud sync with light and dark mode</p>
+          </div>
         </div>
         <div className="content__card">
           <img src="/assets/app-design/desktop/image-loopstudios.jpg" alt="Loopstudios"/>
-          <h3 className="content__title">Loopstudios</h3>
-          <p className="content__description">A VR experience app made for Loopstudios</p>
+          <div>
+            <h3 className="content__title">Loopstudios</h3>
+            <p className="content__description">A VR experience app made for Loopstudios</p>
+          </div>
         </div>
       </section>
       
       <section className="pages-web">
-        <div className="pages-web__app-design">
+        <Link to="/webdesign" style={linksStyle} className="pages-web__app-design">
           <img src="/assets/home/desktop/image-web-design-small.jpg" alt="Web design page"/>
           <div className="pages-web__link">
             <h2>Web design</h2>
-            <Link to="/webdesign" style={linksStyle}>
               <p>View projects</p>
-            </Link>
           </div>
-        </div>
-        <div className="pages-web__graphic-design">
+        </Link>
+        <Link to="/graphicsdesign" style={linksStyle} className="pages-web__graphic-design">
           <img src="/assets/home/desktop/image-graphic-design.jpg" alt="Graphic design page"/>
           <div className="pages-web__link">
             <h2>Graphic design</h2>
-            <Link to="/graphicsdesign" style={linksStyle}>
               <p>View projects</p>
-            </Link>
           </div>
-        </div>
+        </Link>
       </section>
 
       <ContactLink />

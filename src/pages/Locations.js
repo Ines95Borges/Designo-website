@@ -20,7 +20,6 @@ const Locations = () => {
             </div>
             <div className="locations__content">
               <h2 className="locations__title">Canada</h2>
-              <div></div>
               <address>
                 <strong>Designo Central Office</strong><br/>
                 3886 Wellington Street<br/>
@@ -49,7 +48,6 @@ const Locations = () => {
             </div>
             <div className="locations__content">
               <h2 className="locations__title">Australia</h2>
-              <div></div>
               <address>
                 <strong>Designo AU Office</strong><br/>
                 19 Balonne Street<br/>
@@ -76,7 +74,6 @@ const Locations = () => {
             </div>
             <div className="locations__content">
               <h2 className="locations__title">United Kingdom</h2>
-              <div></div>
               <address>
                 <strong>Designo UK Office</strong><br/>
                 13  Colorado Way<br/>
