@@ -3,6 +3,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 50px 0px;
+
+  @media screen and (max-width: 560px){
+    padding: 40px 20px;
+  }
 
   &--logo{
     width: 196px;
@@ -18,5 +23,47 @@
       text-transform: uppercase;
       color: var(--clr-primary-black);
     }
+
+    @media screen and (max-width: 560px) {
+      display: none;
+    }
   }
+
+  &__toogle--btn-hamburger{
+    display: none;
+    border: none;
+    @media screen and (max-width: 560px) {
+      display: block;
+    }
+  }
+  &__toogle--btn-close{
+    display: none;
+    border: none;
+  }
+
+  &__dropdown-content{
+    display: none;
+    position: absolute;
+    z-index: 4;
+    right: 0;
+    left: 0;
+    top: 80px;
+    list-style-type: none;
+    text-align: left;
+    background-color: #1d1c1e;
+    padding: 30px 10px;
+
+    li{
+      background-color: var(--clr-primary-dark);
+      color: var(--clr-secondary-light-grey);
+      padding: 10px;
+    }
+
+    a{
+      text-decoration: none;
+      text-transform: uppercase;
+      color: var(--clr-primary-black);
+    }
+  }
+
 }

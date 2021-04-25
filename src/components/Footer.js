@@ -14,6 +14,7 @@ const Footer = ({isContactLink}) => {
         <Link to="/" style={navStyle}>
           <img src="/assets/shared/desktop/logo-light.png" alt="logo" className="navbar--logo"/>
         </Link>
+        <hr className="footer__navbar-hr"/>
         <ul className="footer__navbar-content">
           <Link to="/about">  
             <li>our company</li>

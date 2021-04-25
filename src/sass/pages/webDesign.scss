@@ -6,6 +6,10 @@
   position: relative;
   overflow-y: hidden;
 
+  @media screen and (max-width: 560px) {
+    margin-top: 0;
+  }
+
   &__bg-image {
     position: absolute;
     transform: translateY(-30%);
@@ -21,6 +25,10 @@
     transform: translate(-50%, -50%);
     text-align: center;
     padding: 150px;
+
+    @media screen and (max-width: 560px) {
+      padding: 0;
+    }
   }
 
   &__title {
@@ -29,6 +37,11 @@
     line-height: 48px;
     color: var(--clr-primary-white);
     margin-bottom: 20px;
+
+    @media screen and (max-width: 560px) {
+      font-size: 32px;
+      line-height: 36px;
+    }
   }
 
   &__text {
@@ -44,6 +57,10 @@
   top: 281px;
   left: -100px;
   z-index: -1;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
 
 .content {
@@ -56,6 +73,11 @@
     grid-template-columns: 1fr;
   }
 
+  @media screen and (max-width: 560px) {
+    margin-top: 50px;
+    padding: 0 30px;
+  }
+
   &__card {
     max-width: 100%;
     border-radius: 10px;
@@ -65,6 +87,10 @@
     @media screen and (max-width: 768px) {
       display: flex;
       align-items: center;
+    }
+
+    @media screen and (max-width: 560px) {
+      flex-direction: column;
     }
 
     &:hover {
@@ -82,6 +108,11 @@
       @media screen and (max-width: 768px) {
         border-radius: 10px 0 0 10px;
         width: 50%;
+      }
+
+      @media screen and (max-width: 560px) {
+        width: 100%;
+        border-radius: 10px 10px 0 0;
       }
     }
   }
@@ -117,6 +148,10 @@
     grid-template-columns: 100%;
     grid-template-rows: 200px 200px;
     grid-auto-flow: row;
+  }
+
+  @media screen and (max-width: 560px) {
+    padding: 0 30px;
   }
 
   &__app-design,

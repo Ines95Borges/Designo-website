@@ -1,4 +1,4 @@
-.footer{
+.footer {
   padding: 100px 100px 50px 100px;
   margin-left: -100px;
   margin-right: -100px;
@@ -7,52 +7,107 @@
   left: -100;
   bottom: 0;
 
-  &__navbar{
+  @media screen and (max-width: 768px) {
+    margin: 100px -30px 0 -30px;
+    padding: 100px 30px 50px 30px;
+  }
+
+  @media screen and (max-width: 560px) {
+    margin: 100px 0 0 0;
+    padding: 100px 0 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__navbar {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media screen and (max-width: 560px) {
+      flex-direction: column;
+    }
+
+    hr.footer__navbar-hr {
+      display: none;
+      margin: 30px 0;
+      border: 1px solid var(--clr-secondary-dark-grey);
+
+      @media screen and (max-width: 560px) {
+        display: block;
+        width: 100%;
+      }
+    }
   }
 
-  &--logo{
+  &--logo {
     width: 196px;
   }
 
-  &__navbar-content{
+  &__navbar-content {
     display: flex;
     gap: 50px;
     list-style-type: none;
 
-    a{
+    @media screen and (max-width: 560px) {
+      flex-direction: column;
+      gap: 20px;
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    a {
       text-decoration: none;
       text-transform: uppercase;
       color: var(--clr-primary-white);
     }
   }
 
-  hr{
+  hr {
     margin: 50px 0;
     border: 1px solid var(--clr-secondary-dark-grey);
+
+    @media screen and (max-width: 560px) {
+      display: none;
+    }
   }
 
-  &__information-container{
+  &__information-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+
+    @media screen and (max-width: 560px) {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, 1fr);
+      place-items: center;
+      margin-top: 30px;
+    }
   }
 
-  &__address1, &__address2{
+  &__address1,
+  &__address2 {
     color: var(--clr-primary-white);
     font-size: var(--fs-p);
     line-height: 26px;
     font-weight: 400;
+
+    @media screen and (max-width: 560px) {
+      text-align: center;
+    }
   }
 
-  &__social-links{
+  &__social-links {
     display: flex;
     gap: 15px;
     align-items: flex-end;
     place-self: end end;
     cursor: pointer;
+
+    @media screen and (max-width: 560px) {
+      place-self: center;
+    }
   }
 }
